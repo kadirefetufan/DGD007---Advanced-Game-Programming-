@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: RainbowColors
+  m_EditorClassIdentifier: 
+  m_GroupName: RainbowColors
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 98ed386998e19764e92ae2dd0aec9452
+  m_SerializeEntries: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 698393c2440875140b68e38b586aa366, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a461c467a890eb049b3597a92d574df9, type: 2}
+    - {fileID: 11400000, guid: 0da2c51d785f04245b912f9568f266ac, type: 2}
