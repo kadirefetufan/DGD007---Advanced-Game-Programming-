@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A703D9D3-2985-A6E9-7C3B-F9826978F8B8}</ProjectGuid>
+    <ProjectGuid>{CF6354FD-E998-AC75-AC2B-27376D6D51E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Boxophobic.Utils.Editor</AssemblyName>
@@ -818,7 +818,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{6767CC20-E3E7-1F7C-F474-091B1CD0C56D}</Project>
+      <Project>{F02830CD-C578-EA34-4C36-5C6815C1F588}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
   </ItemGroup>

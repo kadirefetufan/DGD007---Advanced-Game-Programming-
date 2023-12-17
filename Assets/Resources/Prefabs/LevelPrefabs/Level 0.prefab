@@ -1538,25 +1538,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7100447273257721373, guid: a8bac55e5d864784f82e39ad65f5191d, type: 3}
   m_PrefabInstance: {fileID: 1827607310981584117}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8923086642380278508 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7100447273257721369, guid: a8bac55e5d864784f82e39ad65f5191d, type: 3}
-  m_PrefabInstance: {fileID: 1827607310981584117}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5838961600939480186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923086642380278508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 049dff7b2fafdd44ea896a200bc553d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hedefKonum: {fileID: 0}
-  acilacakCanvas: {fileID: 0}
 --- !u!1001 &1841933529586778077
 PrefabInstance:
   m_ObjectHideFlags: 0

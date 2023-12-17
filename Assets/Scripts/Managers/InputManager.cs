@@ -13,19 +13,9 @@ namespace Managers
 {
     public class InputManager : MonoBehaviour
     {
-        #region Self Variables
-
-        #region Public Variables
-
+       
         [Header("Data")] public InputData Data;
 
-        #endregion
-        #region Serialized Variables
-
-
-        #endregion
-
-        #region Private Variables
 
         private bool isFirstTimeTouchTaken =false;
         private bool isReadyForTouch;
@@ -35,9 +25,6 @@ namespace Managers
         private Vector3 _moveVector; //ref type
         private Vector3 _playerMovementValue;
 
-        #endregion
-
-        #endregion
 
         private void Awake()
         {
@@ -55,8 +42,6 @@ namespace Managers
 
         private InputData GetInputData() => Resources.Load<CD_Input>("Data/CD_Input").InputData;
 
-        #region Event Subscriptions
-
         private void OnEnable()
         {
             _playerInput.Runner.Enable();
@@ -65,8 +50,7 @@ namespace Managers
 
         private void SubscribeEvents()
         {
-           //InputSignals.Instance.onEnableInput += OnEnableInput;
-           //InputSignals.Instance.onDisableInput += OnDisableInput;
+        
             CoreGameSignals.Instance.onPlay += OnPlay;
             CoreGameSignals.Instance.onReset += OnReset;
             CoreGameSignals.Instance.onGetGameState += OnChangeInputType;
@@ -80,8 +64,7 @@ namespace Managers
 
         private void UnSubscribeEvents()
         {
-           //InputSignals.Instance.onEnableInput -= OnEnableInput;
-           //InputSignals.Instance.onDisableInput -= OnDisableInput;
+           
             CoreGameSignals.Instance.onPlay -= OnPlay;
             CoreGameSignals.Instance.onReset -= OnReset;
             _playerInput.Runner.MouseDelta.performed -= OnPlayerInputMouseDeltaPerformed;
@@ -95,7 +78,7 @@ namespace Managers
         private void OnPlayerInputJoyStickStart(InputAction.CallbackContext context)
         {
             _playerMovementValue = new Vector3(context.ReadValue<Vector2>().x, 0f, context.ReadValue<Vector2>().y);
-            //Debug.Log("OnPlayerInputJoyStickStart"+_moveVector.x);
+            
             InputSignals.Instance.onIdleInputTaken?.Invoke(new IdleInputParams()
             {
                 IdleXValue = _playerMovementValue.x * Data.IdleInputSpeed,
@@ -127,8 +110,7 @@ namespace Managers
             _playerInput.Runner.Disable();
             UnSubscribeEvents();
         }
-        #endregion
-        #region Mouse Drag Methods
+      
         
         void OnPlayerInputMouseDeltaPerformed(InputAction.CallbackContext context)
         {
@@ -167,10 +149,7 @@ namespace Managers
                 CoreGameSignals.Instance.onPlay?.Invoke();
             }
         }
-        
-        #endregion
-        #region Subscribed Methods
-
+       
         private void OnEnableInput()
         {
             isReadyForTouch = true;
@@ -210,6 +189,6 @@ namespace Managers
             isReadyForTouch = false;
             isFirstTimeTouchTaken = false;
         }
-        #endregion
+       
     }
 }
