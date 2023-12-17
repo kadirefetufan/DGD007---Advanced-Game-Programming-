@@ -14,6 +14,9 @@ TagManager:
   - DroneAreaPhysics
   - Collected
   - Roulette
+  - Market
+  - SideMarket
+  - canvass
   layers:
   - Default
   - TransparentFX

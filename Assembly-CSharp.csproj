@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\Controllers\DroneAreaPhysics.cs" />
     <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\Scripts\CanvasTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\Commands\CollectableMovementCommand.cs" />
@@ -200,7 +201,6 @@
     <Compile Include="Assets\Scripts\Controllers\DroneAreaMeshController.cs" />
     <Compile Include="Assets\Scripts\Enums\SaveTypes.cs" />
     <Compile Include="Assets\Scripts\Managers\Abstracts\Concreates\IdleState.cs" />
-    <Compile Include="Assets\Scripts\OyuncuKontrolu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\_MK\MKToon\Shader\URP\Standard\StandardUnlitRefraction.shader" />
